@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   });
                   // NavigationService().navigateTo('/details', arguments: { 'id': 123, 'name': 'John Doe' });
                 },
-                child: Text("push to detail page with argument")),
+                child: const Text("push to detail page with argument")),
 
 
 
@@ -48,20 +48,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   });
                   // NavigationService().navigateTo('/details', arguments: { 'id': 123, 'name': 'John Doe' });
                 },
-                child: Text("push to detail page with NO argument")),
+                child: const Text("push to detail page with NO argument")),
 
 
             ElevatedButton(
                 onPressed: () {
                   di<NavigationService>().navigateToReplacement(Routes.profile);
                 },
-                child: Text("pushReplacement profile page")),
+                child: const Text("pushReplacement profile page")),
 
             ElevatedButton(
                 onPressed: () {
                   di<NavigationService>().navigateTo(Routes.profile);
                 },
-                child: Text("push to profile page")),
+                child: const Text("push to profile page")),
 
           ],
         ),
